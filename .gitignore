@@ -1,0 +1,7 @@
+*.pkg.tar.xz
+config.h
+drw.o
+dwm
+dwm.o
+pkg/
+util.o
