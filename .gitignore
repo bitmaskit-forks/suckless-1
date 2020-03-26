@@ -1,4 +1,5 @@
 *.pkg.tar.xz
+boxdraw.o
 config.h
 pkg/
 st
