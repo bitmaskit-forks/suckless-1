@@ -1,0 +1,9 @@
+*.pkg.tar.xz
+config.h
+dmenu
+dmenu.o
+drw.o
+pkg/
+stest
+stest.o
+util.o
