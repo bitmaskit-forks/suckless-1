@@ -38,6 +38,9 @@
 *.pkg.tar.xz
 dwmblocks
 
+# Local config
+blocks.h
+
 # Debug files
 *.dSYM/
 *.su

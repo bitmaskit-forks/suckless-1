@@ -2,6 +2,8 @@ PREFIX ?= /usr/local
 
 output: dwmblocks.o
 	gcc dwmblocks.o -lX11 -o dwmblocks
+blocks.h: blocks.def.h
+	cp blocks.def.h blocks.h
 dwmblocks.o: dwmblocks.c blocks.h
 	gcc -c -lX11 dwmblocks.c 
 clean:
