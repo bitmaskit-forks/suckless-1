@@ -1,0 +1,6 @@
+*.pkg.tar.xz
+config.h
+explicit_bzero.o
+pkg/
+slock
+slock.o
