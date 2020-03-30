@@ -1,3 +1,5 @@
+PREFIX ?= /usr/local
+
 output: dwmblocks.o
 	gcc dwmblocks.o -lX11 -o dwmblocks
 dwmblocks.o: dwmblocks.c blocks.h
@@ -5,5 +7,5 @@ dwmblocks.o: dwmblocks.c blocks.h
 clean:
 	rm -f *.o *.gch dwmblocks
 install: output
-	mkdir -p /usr/local/bin
-	cp -f dwmblocks /usr/local/bin
+	mkdir -p $(DESTDIR)$(PREFIX)/bin
+	cp -f dwmblocks $(DESTDIR)$(PREFIX)/bin
