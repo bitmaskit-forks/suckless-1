@@ -1,5 +1,7 @@
-output: dwmblocks.c blocks.h
-	cc `pkg-config --cflags x11` `pkg-config --libs x11` dwmblocks.c -o dwmblocks
+output: dwmblocks.o
+	gcc dwmblocks.o -lX11 -o dwmblocks
+dwmblocks.o: dwmblocks.c blocks.h
+	gcc -c -lX11 dwmblocks.c 
 clean:
 	rm -f *.o *.gch dwmblocks
 install: output
