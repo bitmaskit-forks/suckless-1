@@ -1,0 +1,7 @@
+*.pkg.tar.xz
+config.h
+pkg/
+tabbed
+tabbed.o
+xembed
+xembed.o
